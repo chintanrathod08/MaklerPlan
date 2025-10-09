@@ -1,0 +1,52 @@
+<header class="w-full h-[106px]  backdrop-blur-xl  flex items-center justify-center fixed top-0 lef-0 z-50">
+<!-- bg-transparent -->
+
+    <div class="container w-[80%] h-full flex items-center justify-between">
+
+        <!-- logo -->
+        <div class="logo w-[326px] h-full flex items-center justify-cente">
+            <img src="/Main_Logo.png" alt="">
+        </div>
+
+        <!-- nav -->
+        <nav class="w-[444px] h-full flex justify-cente items-center me-[20%]">
+            <ul class="w-full h-full flex items-center justify-between color-[#105156]">
+                <li>
+                    <a routerLink="/home" 
+                     routerLinkActive="text-[#105156]"
+                     [routerLinkActiveOptions]="{ exact: true }"
+                    >Menu</a>
+                </li>
+                <li>
+                    <a routerLink="/about"
+                    routerLinkActive="text-[#105156]"
+                     [routerLinkActiveOptions]="{ exact: true }"
+                     class="text-[gray] transition-colors duration-300"
+                    >About Us</a>
+                </li>
+                <li>
+                    <a routerLink="/service"
+                    routerLinkActive="text-[gray]"
+                     [routerLinkActiveOptions]="{ exact: true }"
+                     class="text-[#105156] transition-colors duration-300"
+                    >Service</a>
+                </li>
+                <li>
+                    <a routerLink="/blog"
+                    routerLinkActive="text-[gray]"
+                     [routerLinkActiveOptions]="{ exact: true }"
+                     class="text-[#105156] transition-colors duration-300"
+                    >Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- search -->
+        <button class="w-[44px] h-[44px] bg-[#105156] border-none text-[white] text-[22px] hover:bg-[#105156]">
+            <i class="ri-search-line"></i>
+        </button>
+
+    </div>
+
+
+</header>
