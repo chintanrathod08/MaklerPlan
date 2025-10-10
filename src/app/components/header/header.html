@@ -1,7 +1,7 @@
 <header class="w-full h-[106px]  backdrop-blur-xl  flex items-center justify-center fixed top-0 lef-0 z-50">
 <!-- bg-transparent -->
 
-    <div class="container w-[80%] h-full flex items-center justify-between">
+    <div class="container w-[85%] h-full flex items-center justify-between">
 
         <!-- logo -->
         <div class="logo w-[326px] h-full flex items-center justify-cente">
@@ -10,32 +10,25 @@
 
         <!-- nav -->
         <nav class="w-[444px] h-full flex justify-cente items-center me-[20%]">
-            <ul class="w-full h-full flex items-center justify-between color-[#105156]">
+            <ul class="w-full h-full flex items-center justify-between">
                 <li>
-                    <a routerLink="/home" 
-                     routerLinkActive="text-[#105156]"
-                     [routerLinkActiveOptions]="{ exact: true }"
+                    <a routerLink="/home" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300" 
+                    routerLinkActive="!text-[#105156]"
                     >Menu</a>
                 </li>
                 <li>
-                    <a routerLink="/about"
-                    routerLinkActive="text-[#105156]"
-                     [routerLinkActiveOptions]="{ exact: true }"
-                     class="text-[gray] transition-colors duration-300"
+                    <a routerLink="/about" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
+                    routerLinkActive="!text-[#105156]"
                     >About Us</a>
                 </li>
                 <li>
-                    <a routerLink="/service"
-                    routerLinkActive="text-[gray]"
-                     [routerLinkActiveOptions]="{ exact: true }"
-                     class="text-[#105156] transition-colors duration-300"
+                    <a routerLink="/service" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
+                    routerLinkActive="!text-[#105156]"
                     >Service</a>
                 </li>
                 <li>
-                    <a routerLink="/blog"
-                    routerLinkActive="text-[gray]"
-                     [routerLinkActiveOptions]="{ exact: true }"
-                     class="text-[#105156] transition-colors duration-300"
+                    <a routerLink="/blog" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
+                    routerLinkActive="!text-[#105156]"
                     >Blog</a>
                 </li>
             </ul>
