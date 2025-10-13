@@ -1,93 +1,105 @@
 <!-- hero-section -->
-<section class="w-full h-auto lg:h-[1024px] lg:grid lg:grid-cols-2 relative">
+<section class="w-[100%] h-auto lg:h-[1024px] flex justify-center items-center">
 
-    <!-- left-section -->
-    <div class="w-full h-auto">
+    <div class="container w-[100rem] h-full lg:grid lg:grid-cols-2 relative">
 
-        <!-- bg-image -->
-        <div class="relative w-full h-[100vh] lg:w-[630px]  lg:h-[939.5px] lg:rounded-b-full overflow-hidden shadow-xl bg-[url('/hero_section.png')] bg-no-repeat bg-top bg-cover  z-100 ">
-            <!-- overlay -->
-            <div class="absolute left-0 top-0 inset-0 bg-black/50 lg:hidden flex justify-center items-center"></div>
+        <!-- left-section -->
+        <div class="w-full h-auto">
+
+            <!-- bg-image -->
+            <div
+                class="relative w-full h-[100vh] lg:w-[630px]  lg:h-[939.5px] lg:rounded-b-full overflow-hidden shadow-xl bg-[url('/hero_section.png')] bg-no-repeat bg-top bg-cover  z-100 ">
+                <!-- overlay -->
+                <div class="absolute left-0 top-0 inset-0 bg-black/50 lg:hidden flex justify-center items-center"></div>
+            </div>
+
+            <!-- vectore -->
+            <img src="/hero_sec_Vector 1.png" alt="" class="absolute top-0 left-0 -z-[5]">
+
         </div>
 
-        <!-- vectore -->
-        <img src="/hero_sec_Vector 1.png" alt="" class="absolute top-0 left-0 -z-[5]">
+        <!-- right-sec -->
+        <div class="w-full h-auto absolute left-0 top-48 lg:static lg:pt-[35%]  lg:px-0">
 
-    </div>
+            <h1
+                class="text-[38px] px-5 lg:px-5 text-center lg:text-left lg:text-[68px] text-[white] lg:text-[#343434] font-[700] lg:pe-[25%] capitalize ">
+                smart to invest In real estate</h1>
 
-    <!-- right-sec -->
-    <div class="w-full h-auto absolute left-0 top-48 lg:static lg:pt-[35%] px-5 lg:px-0">
+            <p
+                class="text-[12px] px-5 lg:px-5 text-center lg:text-left lg:text-[20px] text-[white] lg:text-[#595959] lg:pe-[25%] mt-[1.5rem]">
+                Nunc In Dictum Convallis Purus Adipiscing Nec Odio.
+                Sit Nulla Morbi Mi Nec Ultrices Nisl Erat At.</p>
 
-        <h1 class="text-[38px] text-center lg:text-left lg:text-[68px] text-[white] lg:text-[#343434] font-[700] lg:pe-[25%] capitalize ">smart to invest In real estate</h1>
-        
-        <p class="text-[12px] text-center lg:text-left lg:text-[20px] text-[white] lg:text-[#595959] lg:pe-[25%] mt-[1.5rem]">Nunc In Dictum Convallis Purus Adipiscing Nec Odio.
-            Sit Nulla Morbi Mi Nec Ultrices Nisl Erat At.</p>
-
-        <!-- buttons -->
-        <div class="flex mt-[2rem] gap-[3rem]">
-            <button class="w-[159px] h-[56px] rounded-[7px] bg-[#105156] text-[white] hover:border-2 hover:border-[#105156] hover:text-[#105156] hover:bg-[white]">Get
-                Started</button>
-            <button class="w-[159px] h-[56px] rounded-[7px]  border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-[white]">Contact
-                Us</button>
-        </div>
-
-        <!-- counter section -->
-        <div id="counterSection" class="grid grid-cols-1 lg:grid-cols-2  w-full lg:w-[500px] h-auto mt-[2.5rem] gap-y-[30px]">
-
-            <!-- 1 -->
-            <div class="w-auto lg:w-[221px] h-[78px] flex flex-col items-center justify-center relative">
-
-                <!-- blurred ring background -->
-                <div class="absolute inset-0 bg-[url('/ring_1.png')] bg-top bg-no-repeat"></div>
-
-                <!-- sharp number text -->
-                <h1 class="relative text-[34px] font-[600]">
-                    {{ brokersCount | number:'1.0-0' }}
-                </h1>
-
-                <!-- label -->
-                <p class="relative text-[#595959] text-[18px]">Brokers in our network</p>
-
+            <!-- buttons -->
+            <div class="flex mt-[2rem] gap-[3rem] px-5 lg:px-5">
+                <button
+                    class="w-[159px] h-[56px] rounded-[7px] bg-[#105156] text-[white] hover:border-2 hover:border-[#105156] hover:text-[#105156] hover:bg-[white]">Get
+                    Started</button>
+                <button
+                    class="w-[159px] h-[56px] rounded-[7px]  border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-[white]">Contact
+                    Us</button>
             </div>
 
-            <!-- 2 -->
-            <div class="w-[221px] h-[78px] flex flex-col items-center justify-center relative">
+            <!-- counter section -->
+            <div id="counterSection"
+                class="grid grid-cols-1 lg:grid-cols-2  w-full lg:w-[500px] h-auto mt-[2.5rem] gap-y-[30px] absolute top-[69vh] lg:static">
 
-                <!-- blurred ring background -->
-                <div class="absolute inset-0 bg-[url('/ring_2.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
+                <!-- 1 -->
+                <div class="w-full lg:w-[221px] h-[78px] flex flex-col items-center justify-center relative">
 
-                <h1 class="relative text-[34px] font-[600]">
-                    {{ inquiriesCount | number:'1.0-0' }}
-                </h1>
+                    <!-- blurred ring background -->
+                    <div class="absolute inset-0 bg-[url('/ring_1.png')] bg-top bg-no-repeat"></div>
 
-                <p class="text-[#595959] text-[18px]">Inquiries per day</p>
+                    <!-- sharp number text -->
+                    <h1 class="relative text-[34px] font-[600]">
+                        {{ brokersCount | number:'1.0-0' }}
+                    </h1>
+
+                    <!-- label -->
+                    <p class="relative text-[#595959] text-[18px]">Brokers in our network</p>
+
+                </div>
+
+                <!-- 2 -->
+                <div class="w-full lg:w-[221px] h-[78px] flex flex-col items-center justify-center relative">
+
+                    <!-- blurred ring background -->
+                    <div class="absolute inset-0 bg-[url('/ring_2.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
+
+                    <h1 class="relative text-[34px] font-[600]">
+                        {{ inquiriesCount | number:'1.0-0' }}
+                    </h1>
+
+                    <p class="text-[#595959] text-[18px]">Inquiries per day</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="w-full lg:w-[250px] h-[78px] flex flex-col items-center justify-center relative">
+
+                    <!-- blurred ring background -->
+                    <div class="absolute inset-0 bg-[url('/ring_3.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
+
+                    <h1 class="relative text-[34px] font-[600]">
+                        {{ expertiseCount | number:'1.0-0' }}
+                    </h1>
+                    <p class="text-[#595959] text-[18px]">Real estate expertise since</p>
+
+                </div>
+
+                <!-- 4 -->
+                <div class="w-full lg:w-[221px] h-[78px] flex flex-col items-center justify-center relative">
+
+                    <!-- blurred ring background -->
+                    <div class="absolute inset-0 bg-[url('/ring_4.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
+
+                    <h1 class="relative text-[34px] font-[600]">
+                        {{ satisfactionCount | number:'1.1-1' }}%
+                    </h1>
+                    <p class="text-[#595959] text-[18px]">Customer satisfaction</p>
+
+                </div>
             </div>
 
-            <!-- 3 -->
-            <div class="w-[250px] h-[78px] flex flex-col items-center justify-center relative">
-
-                <!-- blurred ring background -->
-                <div class="absolute inset-0 bg-[url('/ring_3.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
-
-                <h1 class="relative text-[34px] font-[600]">
-                    {{ expertiseCount | number:'1.0-0' }}
-                </h1>
-                <p class="text-[#595959] text-[18px]">Real estate expertise since</p>
-
-            </div>
-
-            <!-- 4 -->
-            <div class="w-[221px] h-[78px] flex flex-col items-center justify-center relative">
-
-                <!-- blurred ring background -->
-                <div class="absolute inset-0 bg-[url('/ring_4.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
-
-                <h1 class="relative text-[34px] font-[600]">
-                    {{ satisfactionCount | number:'1.1-1' }}%
-                </h1>
-                <p class="text-[#595959] text-[18px]">Customer satisfaction</p>
-
-            </div>
         </div>
 
     </div>
@@ -96,16 +108,19 @@
 
 
 <!-- section-2 -->
-<section class="mt-[3rem] w-full h-auto flex justify-center items-center">
+<section class="mt-[31rem] lg:mt-[3rem] w-full h-auto flex justify-center items-center">
 
-    <div class="w-[85%] h-[auto] grid grid-cols-2">
 
-         <div class="">
-            <h1 class="text-[57px] font-[600] text-[#343434] pe-[5rem]">Why Choose To Invest Real Estate Now</h1>
+    <div class="w-[80rem] h-auto grid cols-1 lg:grid-cols-2">
+
+        <div class="">
+            <h1 class="text-[28px] lg:text-[57px] font-[600] text-[#343434] lg:pe-[5rem]">Why Choose To Invest Real
+                Estate Now</h1>
         </div>
 
         <div class="flex flex-col justify-end">
-            <p class="capitalize text-[18px] text-[#595959] font-[400]">At aliquet viverra placerat enim semper nulla ut
+            <p class="capitalize lg:text-[18px] text-[#595959] font-[400]">At aliquet viverra placerat enim semper nulla
+                ut
                 auctor habitasse. Urna pretium cursus commodo cursus phasellus elit facilisis volutpat etiam.</p>
             <button
                 class="mt-[2rem] w-[159px] h-[56px] rounded-[7px] bg-[#105156] text-[white] hover:border-2 hover:border-[#105156] hover:text-[#105156] hover:bg-[white]">Get
@@ -117,132 +132,140 @@
 
 
 <!-- section-3 -->
-<section class="w-full h-[904px] mt-[4rem] grid grid-cols-2 relative">
+<section class="w-full h-[904px] mt-[4rem] flex justify-center items-center">
 
-    <div class="flex justify-end items-center">
+    <div class="container w-[100rem] h-full grid cols-1 lg:grid-cols-2 relative">
 
-        <div class="w-[85%] h-full flex flex-col items-center justify-between">
+        <div class="flex justify-end items-center">
+            <!-- left -->
+            <div class="w-[85%] h-full flex flex-col items-center justify-between">
 
-            <div class="w-full h-[175px] flex justify-center items-center">
-                <div class="w-[15%] h-full">
-                    <h1
-                        class="text-[52px] font-[600] bg-[url('/sec_2_circle_1.png')] bg-[left_-1.1rem_top_-0.7rem] bg-no-repeat">
-                        01
-                    </h1>
+                <div class="w-full h-[175px] flex justify-center items-center">
+                    <div class="w-[15%] h-full">
+                        <h1
+                            class="text-[52px] font-[600] bg-[url('/sec_2_circle_1.png')] bg-[left_-1.1rem_top_-0.7rem] bg-no-repeat">
+                            01
+                        </h1>
+                    </div>
+                    <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
+                        <h3 class="text-[28px] font-[600]">Property</h3>
+                        <p class="capitalize text-[18px] text-[#595959]">
+                            If you're looking to sell your property, then you've found a partner with contacts to home
+                            builders.
+                            <span *ngIf="showMore1">
+                                Curabitur vel lorem nec nulla gravida porta. Duis et libero ut tortor pretium porttitor.
+                            </span>
+                        </p>
+                        <button (click)="toggleReadMore(1)"
+                            class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
+                            {{ showMore1 ? 'See Less' : 'See More' }}
+                            <img src="/sec_2_seemore.png" alt="">
+                        </button>
+                    </div>
                 </div>
-                <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
-                    <h3 class="text-[28px] font-[600]">Property</h3>
-                    <p class="capitalize text-[18px] text-[#595959]">
-                        If you're looking to sell your property, then you've found a partner with contacts to home
-                        builders.
-                        <span *ngIf="showMore1">
-                            Curabitur vel lorem nec nulla gravida porta. Duis et libero ut tortor pretium porttitor.
-                        </span>
-                    </p>
-                    <button (click)="toggleReadMore(1)"
-                        class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
-                        {{ showMore1 ? 'See Less' : 'See More' }}
-                        <img src="/sec_2_seemore.png" alt="">
-                    </button>
+
+                <div class="w-full h-[175px] flex justify-center items-center">
+                    <div class="w-[15%] h-full">
+                        <h1
+                            class="text-[52px] font-[600] bg-[url('/sec_2_circle_4.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
+                            02
+                        </h1>
+                    </div>
+                    <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
+                        <h3 class="text-[28px] font-[600]">House</h3>
+                        <p class="capitalize text-[18px] text-[#595959]">
+                            Are you looking to sell your home? We understand your needs and will take care of your sale
+                            from
+                            start to finish.
+                            <span *ngIf="showMore2">
+                                Vivamus et urna at felis porta gravida. Integer sit amet elit eu mi malesuada venenatis.
+                            </span>
+                        </p>
+                        <button (click)="toggleReadMore(2)"
+                            class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
+                            {{ showMore2 ? 'See Less' : 'See More' }}
+                            <img src="/sec_2_seemore.png" alt="">
+                        </button>
+                    </div>
                 </div>
+
+
+                <div class="w-full h-[175px] flex justify-center items-center">
+                    <div class="w-[15%] h-full">
+                        <h1
+                            class="text-[52px] font-[600] bg-[url('/sec_2_circle_3.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
+                            03
+                        </h1>
+                    </div>
+                    <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
+                        <h3 class="text-[28px] font-[600]">Apartment</h3>
+                        <p class="capitalize text-[18px] text-[#595959]">
+                            Are you looking to sell your apartment? Whether rented or vacant, we can sell your property
+                            quickly and discreetly.
+                            <span *ngIf="showMore3">
+                                Duis vehicula, justo in accumsan dapibus, nulla massa fringilla ante, ut dignissim
+                                tortor
+                                odio ut est.
+                            </span>
+                        </p>
+                        <button (click)="toggleReadMore(3)"
+                            class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
+                            {{ showMore3 ? 'See Less' : 'See More' }}
+                            <img src="/sec_2_seemore.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="w-full h-[175px] flex justify-center items-center">
+                    <div class="w-[15%] h-full">
+                        <h1
+                            class="text-[52px] font-[600] bg-[url('/sec_2_circle_2.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
+                            04
+                        </h1>
+                    </div>
+                    <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
+                        <h3 class="text-[28px] font-[600]">Business</h3>
+                        <p class="capitalize text-[18px] text-[#595959]">
+                            Are you looking to sell your commercial property? Our over 10 years of experience plays a
+                            crucial role here.
+                            <span *ngIf="showMore4">
+                                Phasellus vel tortor in metus facilisis dignissim. Donec faucibus.
+                            </span>
+                        </p>
+                        <button (click)="toggleReadMore(4)"
+                            class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
+                            {{ showMore4 ? 'See Less' : 'See More' }}
+                            <img src="/sec_2_seemore.png" alt="">
+                        </button>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="w-full h-[175px] flex justify-center items-center">
-                <div class="w-[15%] h-full">
-                    <h1
-                        class="text-[52px] font-[600] bg-[url('/sec_2_circle_4.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
-                        02
-                    </h1>
-                </div>
-                <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
-                    <h3 class="text-[28px] font-[600]">House</h3>
-                    <p class="capitalize text-[18px] text-[#595959]">
-                        Are you looking to sell your home? We understand your needs and will take care of your sale from
-                        start to finish.
-                        <span *ngIf="showMore2">
-                            Vivamus et urna at felis porta gravida. Integer sit amet elit eu mi malesuada venenatis.
-                        </span>
-                    </p>
-                    <button (click)="toggleReadMore(2)"
-                        class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
-                        {{ showMore2 ? 'See Less' : 'See More' }}
-                        <img src="/sec_2_seemore.png" alt="">
-                    </button>
-                </div>
-            </div>
-
-          
-            <div class="w-full h-[175px] flex justify-center items-center">
-                <div class="w-[15%] h-full">
-                    <h1
-                        class="text-[52px] font-[600] bg-[url('/sec_2_circle_3.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
-                        03
-                    </h1>
-                </div>
-                <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
-                    <h3 class="text-[28px] font-[600]">Apartment</h3>
-                    <p class="capitalize text-[18px] text-[#595959]">
-                        Are you looking to sell your apartment? Whether rented or vacant, we can sell your property
-                        quickly and discreetly.
-                        <span *ngIf="showMore3">
-                            Duis vehicula, justo in accumsan dapibus, nulla massa fringilla ante, ut dignissim tortor
-                            odio ut est.
-                        </span>
-                    </p>
-                    <button (click)="toggleReadMore(3)"
-                        class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
-                        {{ showMore3 ? 'See Less' : 'See More' }}
-                        <img src="/sec_2_seemore.png" alt="">
-                    </button>
-                </div>
-            </div>
-
-          
-            <div class="w-full h-[175px] flex justify-center items-center">
-                <div class="w-[15%] h-full">
-                    <h1
-                        class="text-[52px] font-[600] bg-[url('/sec_2_circle_2.png')] bg-[left_-0.5rem_top_-0.7rem] bg-no-repeat">
-                        04
-                    </h1>
-                </div>
-                <div class="w-[85%] h-full flex flex-col items-start justify-between pt-[1.2rem]">
-                    <h3 class="text-[28px] font-[600]">Business</h3>
-                    <p class="capitalize text-[18px] text-[#595959]">
-                        Are you looking to sell your commercial property? Our over 10 years of experience plays a
-                        crucial role here.
-                        <span *ngIf="showMore4">
-                            Phasellus vel tortor in metus facilisis dignissim. Donec faucibus.
-                        </span>
-                    </p>
-                    <button (click)="toggleReadMore(4)"
-                        class="mt-[0.7rem] text-[#105156] font-[600] flex gap-[1rem] items-center">
-                        {{ showMore4 ? 'See Less' : 'See More' }}
-                        <img src="/sec_2_seemore.png" alt="">
-                    </button>
-                </div>
-            </div>
-
         </div>
 
-    </div>
+        <div class="flex justify-end items-center pe-[5rem]">
+            <div
+                class="w-[597px] h-[776px] bg-[url('/section_2.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
+            </div>
+        </div>
 
-    
-    <div class="flex justify-end items-center pe-[5rem]">
-        <div class="w-[597px] h-[776px] bg-[url('/section_2.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl"></div>
-    </div>
+        <img src="/Vector_2.png" alt="" class="absolute right-0 top-0 -z-[5]">
 
-    <img src="/Vector_2.png" alt="" class="absolute right-0 top-0 -z-[5]">
+    </div>
 </section>
 
 
 <!-- section-4 -->
-<section class="mt-[3rem] w-full h-[1142px]  flex justify-center items-center relative">
+<section class="mt-[3rem]  w-full h-[1142px]  flex justify-center items-center">
 
-    <img src="/vectore_sec_4.png" alt="" class="absolute top-0 right-0 -z-[1]">
+    <div class="container w-[100rem] h-full flex justify-center items-center relative">
+        
+        <img src="/vectore_sec_4.png" alt="" class="absolute top-0 right-0 -z-[1]">
 
     <div class="w-[85%] h-[85%] grid grid-cols-[1fr_auto_1fr] items-center justify-center">
 
-        
+
         <div class="flex flex-col justify-between pr-[5rem] h-[100%]">
 
             <div class="capitalize">
@@ -280,7 +303,7 @@
         </div>
 
         <div class="flex flex-col items-center justify-between h-auto translate-y-[16%]">
-     
+
             <div class="flex flex-col items-center">
                 <div
                     class="w-[44px] h-[44px] rounded-full bg-[#d5e9e4] flex items-center justify-center text-[#105156] font-[600] text-[30px]">
@@ -289,7 +312,7 @@
                 <div class="w-[2px] border-l-2 border-dashed border-[#105156] h-[186px] mt-[20%]"></div>
             </div>
 
-     
+
             <div class="flex flex-col items-center mt-[20%]">
                 <div
                     class="w-[44px] h-[44px] rounded-full bg-[#d5e9e4] flex items-center justify-center text-[#105156] font-[600] text-[30px]">
@@ -307,7 +330,7 @@
             </div>
         </div>
 
-     
+
         <div class="h-full flex flex-col items-end justify-evenly pt-[15rem]">
 
 
@@ -323,14 +346,14 @@
 
             </div>
 
-            
+
             <div class="w-[100%] h-[252px] flex justify-center items-center">
                 <div
                     class="w-[402px] h-[100%] bg-[url('/sec_4img2.png')] !bg-cover bg-center bg-no-repeat rounded-lg shadow-2xl">
                 </div>
             </div>
 
-            
+
             <div class="w-[556px] h-auto flex justify-evenly items-start  rounded-xl">
                 <div class="pt-[2%] w-[35px]">
                     <img src="/Icon Sell.png" alt="">
@@ -348,13 +371,19 @@
 
     </div>
 
-</section> 
+    </div>
+
+    
+
+</section>
 
 
 <!-- section-5 -->
-<section class="w-full h-[676px] bg-[url('/sec_5_bg.png')] bg-no-repeat bg-center bg-cover grid grid-cols-2">
+<section class="w-full h-[676px] bg-[url('/sec_5_bg.png')] bg-no-repeat bg-center bg-cover flex justify-center ">
 
-    <div class="grid grid-cols-2 items-start p-[3rem]">
+    <div class="container w-[100rem] h-full grid grid-cols-2">
+
+         <div class="grid grid-cols-2 items-start p-[3rem]">
         <div
             class="relative w-[326px] h-[244px] bg-[white] rounded-lg shadow-2xl justify-self-start capitalize flex flex-col justify-evenly p-[1.8rem] px-[2rem]">
             <i
@@ -410,13 +439,15 @@
         </button>
     </div>
 
+    </div>
+
 </section>
 
-
 <!-- section-6 -->
-<section class="w-full h-[1225px] flex justify-center relative">
+<section class="w-full h-[1225px] flex justify-center">
 
-    <div class="w-[904px] h-auto flex flex-col items-center justify-center">
+    <div class="container w-[100rem] h-full flex justify-center relative">
+        <div class="w-[904px] h-auto flex flex-col items-center justify-center">
 
         <div class="capitalize text-center">
             <h1 class="text-[57px] text-[#343434] font-[600] px-[10rem] leading-[120%]">
@@ -428,12 +459,12 @@
             </p>
         </div>
 
-        
+
         <div class="w-[858px] flex flex-col items-center mt-[3rem]">
 
             <div class="w-[676px] flex justify-between items-center mb-[1.5rem]">
 
-        
+
                 <div (click)="activeTab = 0" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 0,
             'text-[#105156] border border-[#105156]': activeTab !== 0
@@ -441,7 +472,7 @@
                     House
                 </div>
 
-                
+
                 <div (click)="activeTab = 1" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 1,
             'text-[#105156] border border-[#105156]': activeTab !== 1
@@ -467,10 +498,10 @@
 
             </div>
 
-            
+
             <div class="w-full h-auto mt-[3rem]">
 
-                
+
                 <div *ngIf="activeTab === 0" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img1.png')] bg-cover"></div>
@@ -550,7 +581,7 @@
                     </div>
                 </div>
 
-                
+
                 <div *ngIf="activeTab === 2" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img1.png')] bg-cover"></div>
@@ -590,7 +621,7 @@
                     </div>
                 </div>
 
-                
+
                 <div *ngIf="activeTab === 3" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img2.png')] bg-cover"></div>
@@ -635,28 +666,28 @@
     </div>
 
     <img src="/Vector_sec_6.png" alt="" class="absolute right-0 top-0 z-[-1]" />
+    </div>
 </section>
 
 <!-- section-7-->
 <section class="relative w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
 
-
     <div class="absolute inset-0 bg-white/80"></div>
 
-    <div class="absolute max-w-[85%] lg:min-w-[85%] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
+    <div class="absolute w-[80rem] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
 
-        
+
         <div class="flex justify-start">
             <img src="/section_7_img2.png" alt="">
         </div>
 
-        
+
         <div class="p-[1rem] pt-[4rem]">
             <h1 class="text-[48px] text-[white] font-[600] capitalize">you can consult here</h1>
             <p class="capitalize font-[400] text-[white]">Morbi tellus et commodo mauris tellus ac. Sollicitudin
                 elementum facilisi ut a ut ullamcorper ut.</p>
 
-            
+
             <div class="mt-[3rem] w-[455px] h-[74px] bg-[white] rounded-[10px] flex items-center justify-between px-3">
 
                 <input type="text" placeholder="Enter your email address"
