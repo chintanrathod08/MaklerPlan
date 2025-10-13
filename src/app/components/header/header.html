@@ -1,45 +1,58 @@
-<header class="w-full h-[106px]  backdrop-blur-xl  flex items-center justify-center fixed top-0 lef-0 z-50">
-<!-- bg-transparent -->
+<header class="w-full h-[106px] backdrop-blur-xl flex items-center justify-center fixed top-0 left-0 z-50 bg-white/50">
+  
+    <div class="container max-w-[85%] h-full flex items-center justify-between">
 
-    <div class="container w-[85%] h-full flex items-center justify-between">
+    <!-- Hamburger Icon (visible only on mobile) -->
+    <button 
+      class="lg:hidden text-[#105156] text-[28px] font-[500]" 
+      (click)="toggleMenu()"
+    >
+      <i [ngClass]="menuOpen ? 'ri-close-line' : 'ri-menu-fill'"></i>
+    </button>
 
-        <!-- logo -->
-        <div class="logo w-[326px] h-full flex items-center justify-cente cursor-pointer">
-            <img src="/Main_Logo.png" routerLink="/home" alt="">
-        </div>
-
-        <!-- nav -->
-        <nav class="w-[444px] h-full flex justify-cente items-center me-[20%]">
-            <ul class="w-full h-full flex items-center justify-between">
-                <li>
-                    <a routerLink="/home" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300" 
-                    routerLinkActive="!text-[#105156]"
-                    >Menu</a>
-                </li>
-                <li>
-                    <a routerLink="/about" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
-                    routerLinkActive="!text-[#105156]"
-                    >About Us</a>
-                </li>
-                <li>
-                    <a routerLink="/service" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
-                    routerLinkActive="!text-[#105156]"
-                    >Service</a>
-                </li>
-                <li>
-                    <a routerLink="/blog" class="font-[500] drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] text-[#595959] transition-colors duration-300"
-                    routerLinkActive="!text-[#105156]"
-                    >Blog</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- search -->
-        <button class="w-[44px] h-[44px] bg-[#105156] border-none text-[white] text-[22px] hover:bg-[#105156]">
-            <i class="ri-search-line"></i>
-        </button>
-
+    <!-- Logo -->
+    <div class="logo w-[180px] lg:w-[326px] h-full flex items-center cursor-pointer">
+      <img src="/Main_Logo.png" routerLink="/home" alt="Logo">
     </div>
 
+    <!-- Navigation Menu -->
+    <nav class="absolute lg:static top-[106px] left-0 w-full lg:w-[444px] lg:h-full bg-white/90 lg:bg-transparent 
+             flex flex-col lg:flex-row items-center lg:justify-center 
+             transition-all duration-300 ease-in-out overflow-hidden me-[25%]"
+      [ngClass]="menuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0 lg:max-h-none lg:opacity-100'"
+    >
+      <ul class="flex flex-col lg:flex-row w-full items-center justify-center lg:justify-between gap-6 py-4 lg:py-0">
+        <li>
+          <a routerLink="/home" 
+             routerLinkActive="!text-[#105156]"
+             class="font-[500] text-[#595959] transition-colors duration-300"
+          >Menu</a>
+        </li>
+        <li>
+          <a routerLink="/about" 
+             routerLinkActive="!text-[#105156]"
+             class="font-[500] text-[#595959] transition-colors duration-300"
+          >About Us</a>
+        </li>
+        <li>
+          <a routerLink="/service" 
+             routerLinkActive="!text-[#105156]"
+             class="font-[500] text-[#595959] transition-colors duration-300"
+          >Service</a>
+        </li>
+        <li>
+          <a routerLink="/blog" 
+             routerLinkActive="!text-[#105156]"
+             class="font-[500] text-[#595959] transition-colors duration-300"
+          >Blog</a>
+        </li>
+      </ul>
+    </nav>
 
+    <!-- Search Button (hidden on mobile) -->
+    <button class="w-[44px] h-[44px] bg-[#105156] text-white text-[22px] hover:bg-[#0e4a4d]">
+      <i class="ri-search-line"></i>
+    </button>
+
+  </div>
 </header>

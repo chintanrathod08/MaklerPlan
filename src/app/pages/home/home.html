@@ -1,36 +1,44 @@
 <!-- hero-section -->
-<section class="w-full h-[1024px] grid grid-cols-2 relative">
+<section class="w-full h-auto lg:h-[1024px] lg:grid lg:grid-cols-2 relative">
 
     <!-- left-section -->
-    <div
-        class="w-[630px] h-[939.5px] rounded-b-full overflow-hidden shadow-xl bg-[url('/hero_section.png')] bg-no-repeat bg-top bg-cover  z-100">
+    <div class="w-full h-auto">
+
+        <!-- bg-image -->
+        <div class="relative w-full h-[100vh] lg:w-[630px]  lg:h-[939.5px] lg:rounded-b-full overflow-hidden shadow-xl bg-[url('/hero_section.png')] bg-no-repeat bg-top bg-cover  z-100 ">
+            <!-- overlay -->
+            <div class="absolute left-0 top-0 inset-0 bg-black/50 lg:hidden flex justify-center items-center"></div>
+        </div>
+
+        <!-- vectore -->
         <img src="/hero_sec_Vector 1.png" alt="" class="absolute top-0 left-0 -z-[5]">
+
     </div>
 
     <!-- right-sec -->
-    <div class="pt-[35%]">
+    <div class="w-full h-auto absolute left-0 top-48 lg:static lg:pt-[35%] px-5 lg:px-0">
 
-        <h1 class="text-[68px] text-[#343434] font-[700] pe-[25%] capitalize">smart to invest In real estate</h1>
-        <p class="text-[20px] text-[#595959] pe-[25%] mt-[1.5rem]">Nunc In Dictum Convallis Purus Adipiscing Nec Odio.
+        <h1 class="text-[38px] text-center lg:text-left lg:text-[68px] text-[white] lg:text-[#343434] font-[700] lg:pe-[25%] capitalize ">smart to invest In real estate</h1>
+        
+        <p class="text-[12px] text-center lg:text-left lg:text-[20px] text-[white] lg:text-[#595959] lg:pe-[25%] mt-[1.5rem]">Nunc In Dictum Convallis Purus Adipiscing Nec Odio.
             Sit Nulla Morbi Mi Nec Ultrices Nisl Erat At.</p>
 
         <!-- buttons -->
         <div class="flex mt-[2rem] gap-[3rem]">
-            <button
-                class="w-[159px] h-[56px] rounded-[7px] bg-[#105156] text-[white] hover:border-2 hover:border-[#105156] hover:text-[#105156] hover:bg-[white]">Get
+            <button class="w-[159px] h-[56px] rounded-[7px] bg-[#105156] text-[white] hover:border-2 hover:border-[#105156] hover:text-[#105156] hover:bg-[white]">Get
                 Started</button>
-            <button
-                class="w-[159px] h-[56px] rounded-[7px]  border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-[white]">Contact
+            <button class="w-[159px] h-[56px] rounded-[7px]  border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-[white]">Contact
                 Us</button>
         </div>
 
         <!-- counter section -->
-        <div id="counterSection" class="grid grid-cols-2 w-[500px] h-auto mt-[2.5rem] gap-y-[30px]">
-            
-            <div class="w-[221px] h-[78px] flex flex-col items-center justify-center relative">
-               
+        <div id="counterSection" class="grid grid-cols-1 lg:grid-cols-2  w-full lg:w-[500px] h-auto mt-[2.5rem] gap-y-[30px]">
+
+            <!-- 1 -->
+            <div class="w-auto lg:w-[221px] h-[78px] flex flex-col items-center justify-center relative">
+
                 <!-- blurred ring background -->
-                <div class="absolute inset-0 bg-[url('/ring_1.png')] bg-top bg-no-repeat backdrop-blur-xl "></div>
+                <div class="absolute inset-0 bg-[url('/ring_1.png')] bg-top bg-no-repeat"></div>
 
                 <!-- sharp number text -->
                 <h1 class="relative text-[34px] font-[600]">
@@ -39,10 +47,10 @@
 
                 <!-- label -->
                 <p class="relative text-[#595959] text-[18px]">Brokers in our network</p>
-            
+
             </div>
 
-
+            <!-- 2 -->
             <div class="w-[221px] h-[78px] flex flex-col items-center justify-center relative">
 
                 <!-- blurred ring background -->
@@ -51,35 +59,36 @@
                 <h1 class="relative text-[34px] font-[600]">
                     {{ inquiriesCount | number:'1.0-0' }}
                 </h1>
-               
+
                 <p class="text-[#595959] text-[18px]">Inquiries per day</p>
             </div>
 
+            <!-- 3 -->
             <div class="w-[250px] h-[78px] flex flex-col items-center justify-center relative">
-                
+
                 <!-- blurred ring background -->
                 <div class="absolute inset-0 bg-[url('/ring_3.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
-           
+
                 <h1 class="relative text-[34px] font-[600]">
                     {{ expertiseCount | number:'1.0-0' }}
                 </h1>
                 <p class="text-[#595959] text-[18px]">Real estate expertise since</p>
-           
+
             </div>
 
+            <!-- 4 -->
             <div class="w-[221px] h-[78px] flex flex-col items-center justify-center relative">
-               
+
                 <!-- blurred ring background -->
                 <div class="absolute inset-0 bg-[url('/ring_4.png')] bg-top bg-no-repeat filter blur-[3px]"></div>
-                        
+
                 <h1 class="relative text-[34px] font-[600]">
                     {{ satisfactionCount | number:'1.1-1' }}%
                 </h1>
                 <p class="text-[#595959] text-[18px]">Customer satisfaction</p>
-            
+
             </div>
         </div>
-
 
     </div>
 
@@ -91,12 +100,10 @@
 
     <div class="w-[85%] h-[auto] grid grid-cols-2">
 
-        <!-- left -->
-        <div class="">
+         <div class="">
             <h1 class="text-[57px] font-[600] text-[#343434] pe-[5rem]">Why Choose To Invest Real Estate Now</h1>
         </div>
 
-        <!-- right -->
         <div class="flex flex-col justify-end">
             <p class="capitalize text-[18px] text-[#595959] font-[400]">At aliquet viverra placerat enim semper nulla ut
                 auctor habitasse. Urna pretium cursus commodo cursus phasellus elit facilisis volutpat etiam.</p>
@@ -108,15 +115,14 @@
 
 </section>
 
+
 <!-- section-3 -->
 <section class="w-full h-[904px] mt-[4rem] grid grid-cols-2 relative">
 
-    <!-- left -->
     <div class="flex justify-end items-center">
 
         <div class="w-[85%] h-full flex flex-col items-center justify-between">
 
-            <!-- ===== Block 1 ===== -->
             <div class="w-full h-[175px] flex justify-center items-center">
                 <div class="w-[15%] h-full">
                     <h1
@@ -141,7 +147,6 @@
                 </div>
             </div>
 
-            <!-- ===== Block 2 ===== -->
             <div class="w-full h-[175px] flex justify-center items-center">
                 <div class="w-[15%] h-full">
                     <h1
@@ -166,7 +171,7 @@
                 </div>
             </div>
 
-            <!-- ===== Block 3 ===== -->
+          
             <div class="w-full h-[175px] flex justify-center items-center">
                 <div class="w-[15%] h-full">
                     <h1
@@ -192,7 +197,7 @@
                 </div>
             </div>
 
-            <!-- ===== Block 4 ===== -->
+          
             <div class="w-full h-[175px] flex justify-center items-center">
                 <div class="w-[15%] h-full">
                     <h1
@@ -221,11 +226,9 @@
 
     </div>
 
-    <!-- right -->
-    <div class="flex justify-center items-center">
-        <div
-            class="w-[597px] h-[776px] bg-[url('/section_2.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
-        </div>
+    
+    <div class="flex justify-end items-center pe-[5rem]">
+        <div class="w-[597px] h-[776px] bg-[url('/section_2.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl"></div>
     </div>
 
     <img src="/Vector_2.png" alt="" class="absolute right-0 top-0 -z-[5]">
@@ -239,24 +242,21 @@
 
     <div class="w-[85%] h-[85%] grid grid-cols-[1fr_auto_1fr] items-center justify-center">
 
-        <!-- left -->
+        
         <div class="flex flex-col justify-between pr-[5rem] h-[100%]">
 
-            <!-- 1 -->
             <div class="capitalize">
                 <h1 class="text-[57px] font-[600] text-[#343434]">our main focus</h1>
                 <p class="text-[18px] text-[#595959] pe-[10%]">At aliquet viverra placerat enim semper nulla ut auctor
                     habitasse.</p>
             </div>
 
-            <!-- 2 -->
             <div class="w-[100%] h-[252px] flex justify-center items-center">
                 <div
                     class="w-[402px] h-[100%] bg-[url('/sec_4img1.png')] !bg-cover bg-center bg-no-repeat rounded-lg shadow-2xl">
                 </div>
             </div>
 
-            <!-- 3 -->
             <div class="w-full h-auto flex justify-end items-start">
                 <div class="w-[525.97px] gap-10 h-full flex justify-between items-start">
                     <div class="capitalize text-end">
@@ -271,7 +271,6 @@
             </div>
 
 
-            <!-- 4 -->
             <div class="w-[100%] h-[252px] flex justify-center items-center">
                 <div
                     class="w-[402px] h-[100%] bg-[url('/sec_4img3.png')] !bg-cover bg-center bg-no-repeat rounded-lg shadow-2xl">
@@ -280,9 +279,8 @@
 
         </div>
 
-        <!-- CENTER TIMELINE -->
         <div class="flex flex-col items-center justify-between h-auto translate-y-[16%]">
-            <!-- Step 1 -->
+     
             <div class="flex flex-col items-center">
                 <div
                     class="w-[44px] h-[44px] rounded-full bg-[#d5e9e4] flex items-center justify-center text-[#105156] font-[600] text-[30px]">
@@ -291,7 +289,7 @@
                 <div class="w-[2px] border-l-2 border-dashed border-[#105156] h-[186px] mt-[20%]"></div>
             </div>
 
-            <!-- Step 2 -->
+     
             <div class="flex flex-col items-center mt-[20%]">
                 <div
                     class="w-[44px] h-[44px] rounded-full bg-[#d5e9e4] flex items-center justify-center text-[#105156] font-[600] text-[30px]">
@@ -300,7 +298,7 @@
                 <div class="w-[2px] border-l-2 border-dashed border-[#105156] h-[186px] mt-[20%]"></div>
             </div>
 
-            <!-- Step 3 -->
+
             <div class="flex flex-col items-center mt-[20%]">
                 <div
                     class="w-[44px] h-[44px] rounded-full bg-[#d5e9e4] flex items-center justify-center text-[#105156] font-[600] text-[30px]">
@@ -309,10 +307,10 @@
             </div>
         </div>
 
-        <!-- right -->
+     
         <div class="h-full flex flex-col items-end justify-evenly pt-[15rem]">
 
-            <!-- 1 -->
+
             <div class="bg-[white] shadow-2xl w-[556px] h-[150px] flex justify-evenly items-center rounded-md">
                 <div class="w-[35px] h-full pt-[2rem]">
                     <img src="/Icon Money.png" alt="">
@@ -325,14 +323,14 @@
 
             </div>
 
-            <!-- 2 -->
+            
             <div class="w-[100%] h-[252px] flex justify-center items-center">
                 <div
                     class="w-[402px] h-[100%] bg-[url('/sec_4img2.png')] !bg-cover bg-center bg-no-repeat rounded-lg shadow-2xl">
                 </div>
             </div>
 
-            <!-- 3 -->
+            
             <div class="w-[556px] h-auto flex justify-evenly items-start  rounded-xl">
                 <div class="pt-[2%] w-[35px]">
                     <img src="/Icon Sell.png" alt="">
@@ -350,14 +348,12 @@
 
     </div>
 
-</section>
-
+</section> 
 
 
 <!-- section-5 -->
 <section class="w-full h-[676px] bg-[url('/sec_5_bg.png')] bg-no-repeat bg-center bg-cover grid grid-cols-2">
 
-    <!-- left -->
     <div class="grid grid-cols-2 items-start p-[3rem]">
         <div
             class="relative w-[326px] h-[244px] bg-[white] rounded-lg shadow-2xl justify-self-start capitalize flex flex-col justify-evenly p-[1.8rem] px-[2rem]">
@@ -399,7 +395,6 @@
         </div>
     </div>
 
-    <!-- right -->
     <div class="capitalize flex flex-col justify-center ps-[2rem]">
         <h1 class="font-[600] text-[57px] text-[#343434] pe-[20rem] leading-[120%]">what our client say</h1>
         <p class="text-[18px] text-[#595959] mt-[1.5rem] pe-[10rem]">Convallis nec ac purus nunc. Maecenas pharetra
@@ -423,7 +418,6 @@
 
     <div class="w-[904px] h-auto flex flex-col items-center justify-center">
 
-        <!-- HEADING -->
         <div class="capitalize text-center">
             <h1 class="text-[57px] text-[#343434] font-[600] px-[10rem] leading-[120%]">
                 our best property right now
@@ -434,13 +428,12 @@
             </p>
         </div>
 
-        <!-- TABS WRAPPER -->
+        
         <div class="w-[858px] flex flex-col items-center mt-[3rem]">
 
-            <!-- TAB LABELS -->
             <div class="w-[676px] flex justify-between items-center mb-[1.5rem]">
 
-                <!-- TAB BUTTON 1 -->
+        
                 <div (click)="activeTab = 0" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 0,
             'text-[#105156] border border-[#105156]': activeTab !== 0
@@ -448,7 +441,7 @@
                     House
                 </div>
 
-                <!-- TAB BUTTON 2 -->
+                
                 <div (click)="activeTab = 1" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 1,
             'text-[#105156] border border-[#105156]': activeTab !== 1
@@ -456,7 +449,7 @@
                     Property
                 </div>
 
-                <!-- TAB BUTTON 3 -->
+
                 <div (click)="activeTab = 2" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 2,
             'text-[#105156] border border-[#105156]': activeTab !== 2
@@ -464,7 +457,7 @@
                     Apartment
                 </div>
 
-                <!-- TAB BUTTON 4 -->
+
                 <div (click)="activeTab = 3" [ngClass]="{
             'bg-[#105156] text-white': activeTab === 3,
             'text-[#105156] border border-[#105156]': activeTab !== 3
@@ -474,10 +467,10 @@
 
             </div>
 
-            <!-- TAB CONTENT -->
+            
             <div class="w-full h-auto mt-[3rem]">
 
-                <!-- TAB 1: HOUSE -->
+                
                 <div *ngIf="activeTab === 0" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img1.png')] bg-cover"></div>
@@ -517,7 +510,7 @@
                     </div>
                 </div>
 
-                <!-- TAB 2: PROPERTY -->
+
                 <div *ngIf="activeTab === 1" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img2.png')] bg-cover"></div>
@@ -557,7 +550,7 @@
                     </div>
                 </div>
 
-                <!-- TAB 3: APARTMENT -->
+                
                 <div *ngIf="activeTab === 2" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img1.png')] bg-cover"></div>
@@ -597,7 +590,7 @@
                     </div>
                 </div>
 
-                <!-- TAB 4: BUSINESS -->
+                
                 <div *ngIf="activeTab === 3" class="flex justify-between items-start">
                     <div class="flex flex-col gap-[1rem]">
                         <div class="w-[386px] h-[253px] rounded-md bg-[url('/sec_6_img2.png')] bg-cover"></div>
@@ -645,26 +638,25 @@
 </section>
 
 <!-- section-7-->
-<section
-    class="relative w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
+<section class="relative w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
 
-    <!-- overlay -->
+
     <div class="absolute inset-0 bg-white/80"></div>
 
-    <div class="absolute w-[85%] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
+    <div class="absolute max-w-[85%] lg:min-w-[85%] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
 
-        <!-- left -->
-        <div class="flex justify-end">
+        
+        <div class="flex justify-start">
             <img src="/section_7_img2.png" alt="">
         </div>
 
-        <!-- rigth -->
+        
         <div class="p-[1rem] pt-[4rem]">
             <h1 class="text-[48px] text-[white] font-[600] capitalize">you can consult here</h1>
             <p class="capitalize font-[400] text-[white]">Morbi tellus et commodo mauris tellus ac. Sollicitudin
                 elementum facilisi ut a ut ullamcorper ut.</p>
 
-            <!-- input -->
+            
             <div class="mt-[3rem] w-[455px] h-[74px] bg-[white] rounded-[10px] flex items-center justify-between px-3">
 
                 <input type="text" placeholder="Enter your email address"

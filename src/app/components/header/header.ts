@@ -14,6 +14,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class Header {
 
+  menuOpen = false;
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const header = document.querySelector('header');
@@ -22,6 +24,10 @@ export class Header {
     } else {
       header?.classList.remove('nav-scrolled');
     }
+  }
+
+  toggleMenu(){
+    this.menuOpen = !this.menuOpen
   }
 
 }

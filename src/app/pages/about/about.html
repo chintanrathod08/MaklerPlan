@@ -1,46 +1,71 @@
 <!-- hero-section -->
-<section class="mt-[106px] w-full h-[612px] bg-[#cccccc] flex justify-center items-center -z-[1]">
+<section class="mt-[106px] w-full max-h-[612px] bg-[#cccccc] flex justify-center items-center z-[1]">
 
-    <div class="w-[78%] h-[100%] flex justify-center items-center">
+    <div class="max-w-[78%] min-h-full flex flex-col lg:flex-row justify-center items-center gap-[2rem]">
 
         <!-- left -->
-        <div class="w-[60%] h-full flex flex-col justify-center">
-            <h1 class="text-[48px] text-[#105156] font-[700] leading-[48px]">We deliver leads for real estate agents in
-                Germany</h1>
-            <p class="text-[#6D758F] mt-[1rem]">Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis sit
-                phasellus mollis sit aliquam sit nullam neques.</p>
-            <div class="flex gap-5 mt-[2rem]">
+        <div class="w-full lg:w-[60%] flex flex-col justify-center text-center lg:text-left">
+            <h1 class="text-[32px] lg:text-[48px] text-[#105156] font-[700] leading-[1.2]">
+                We deliver leads for real estate agents in Germany
+            </h1>
+            <p class="text-[#6D758F] mt-[1rem] text-[15px] lg:text-[16px] pe-[10rem]">
+                Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis sit phasellus mollis sit aliquam sit
+                nullam neques.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-[2rem] justify-center lg:justify-start">
                 <button
-                    class="w-[129px] text-[14px] h-[40px] rounded-[7px] border border-transparent hover:border-[#105156] text-white bg-[#105156] hover:bg-transparent hover:text-[#105156] font-[500] transition-all duration-300 ease-in-out">
+                    class="w-[150px] h-[44px] rounded-[7px] border border-transparent bg-[#105156] text-white text-[14px] hover:border-[#105156] hover:bg-transparent hover:text-[#105156] transition-all duration-300 ease-in-out">
                     Get started <i class="ri-arrow-right-line"></i>
                 </button>
                 <button
-                    class="w-[113px] text-[14px] h-[40px] rounded-[7px] border border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-[white]">Learn
-                    more</button>
+                    class="w-[150px] h-[44px] rounded-[7px] border-2 border-[#105156] text-[#105156] hover:bg-[#105156] hover:text-white transition-all duration-300 ease-in-out">
+                    Learn more
+                </button>
             </div>
         </div>
 
         <!-- right -->
-        <div class="w-[40%] h-full relative flex justify-center items-center">
-            <!-- Play Button -->
-            <div
-                class="absolute z-20 w-[96px] h-[96px] bg-[#F1F3F7] flex justify-center items-center rounded-full text-[#6D758F] text-[48px] hover:bg-[#E8EAEE] cursor-pointer transition-all duration-300 ease-in-out">
+        <div class="w-full lg:w-[40%] relative flex justify-center items-center">
+
+            <!-- play-btn -->
+            <div class="absolute z-20 w-[80px] h-[80px] lg:w-[96px] lg:h-[96px] bg-[#F1F3F7] flex justify-center items-center rounded-full text-[#6D758F] text-[40px] lg:text-[48px] hover:bg-[#E8EAEE] cursor-pointer transition-all duration-300 ease-in-out"
+                (click)="openVideoModal()">
                 <i class="ri-play-fill"></i>
             </div>
 
-            <!-- Background Image -->
-            <img src="/about_hero.png" alt="About Hero" class="absolute bottom-0 z-10 w-full object-cover rounded-lg">
+            <img src="/about_hero.png" alt="About Hero" class="z-10 w-auto object-cover rounded-lg">
+        </div>
+
+        <!-- Video Modal -->
+        <div *ngIf="isVideoModalOpen"
+            class="fixed inset-0 bg-black/80 flex justify-center items-center z-[9999] transition-all duration-300"
+            (click)="closeVideoModal()">
+
+            <div class="relative w-[90%] md:w-[70%] lg:w-[60%] aspect-video bg-black rounded-lg overflow-hidden shadow-xl"
+                (click)="$event.stopPropagation()">
+                <!-- YouTube Video -->
+                <iframe class="w-full h-full" [src]="sanitizedVideoUrl" title="YouTube Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+                <!-- Close Button -->
+                <button class="absolute top-3 right-3 text-white text-[28px] hover:text-gray-300 transition"
+                    (click)="closeVideoModal()">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
         </div>
 
     </div>
-
 </section>
 
 
 <!-- section-2 -->
 <section class="w-full h-auto flex justify-center items-center mt-[3rem]">
 
-    <div class="w-[78%] h-[635.7px] grid grid-cols-2">
+    <div class="max-w-[78%] h-[635.7px] grid grid-cols-2">
 
         <!-- left -->
         <div class="w-full h-full">
@@ -79,15 +104,15 @@
         </div>
 
         <!-- right -->
-        <div class="w-full h-full grid grid-cols-2 items-end justify-between">
+        <div class="w-full h-full grid grid-cols-2 items-end lg:justify-between">
+            
             <!-- 1 -->
-            <div
-                class="w-[280px] h-[500px] rounded-[30px] bg-[url('/about_sec_2img1.png')] bg-cover bg-center shadow-xl">
+            <div class="w-full h-full flex lg:justify-start 2xl:justify-end items-end pe-[0rem] 2xl:pe-[2rem]">
+                <div class="w-[280px] h-[500px] rounded-[30px] bg-[url('/about_sec_2img1.png')] bg-cover bg-center shadow-xl"></div>
             </div>
             <!-- 2 -->
-            <div class="h-full w-[277px] grid grid-row-2 items-center pt-[3rem] pb-[5rem]">
-                <div
-                    class="shadow-xl w-full h-[280px] rounded-[30px] bg-[url('/about_sec_2img2.png')] bg-center bg-cover">
+            <div class="h-full w-[277px] grid grid-row-2 gap-2 items-center pt-[3rem] pb-[4rem]">
+                <div class="shadow-xl w-full h-[280px] rounded-[30px] bg-[url('/about_sec_2img2.png')] bg-center bg-cover">
                 </div>
                 <div
                     class="shadow-xl w-full h-[180px] rounded-[30px] bg-[url('/about_sec_2img3.png')] bg-center bg-cover relative">
@@ -106,7 +131,7 @@
 
     <!-- left -->
     <div class="flex justify-end items-center">
-        
+
         <div class="w-[85%] capitalize flex flex-col justify-center">
             <h1 class="text-[57px] font-[600] text-[#343434] leading-[120%] pe-[10rem]">Professional new customer
                 service</h1>
@@ -115,16 +140,16 @@
                 the pressure off you with our first-class new customer service. This leaves you more time for the truly
                 important things: sales and customer service.</p>
         </div>
-    
+
     </div>
-
-
 
     <!-- right -->
-    <div class="relative flex justify-center items-center pe-[8.5%]">
-        <div class="w-[597px] h-[776px] bg-[url('/about_sec_2img.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl"></div>
+    <div class="relative flex justify-end items-center lg:pe-[7rem]">
+        <div
+            class="w-[597px] h-[776px] bg-[url('/about_sec_2img.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
+        </div>
     </div>
-    
+
     <img src="/about_sec_3_vectore.png" alt="" class="absolute right-0 top-0 -z-[5]">
 </section>
 
@@ -135,11 +160,13 @@
     <!-- vectore -->
     <img src="/vector_about_sec3.png" alt="" class="absolute left-0 bottom-0 -z-[5]">
 
-    <div class="container w-[85%] h-auto flex justify-center items-start">
+    <div class="container lg:w-[85%] 2xl:max-w-[90%] h-auto flex justify-center items-start">
 
         <!-- left -->
-        <div class="flex justify-center items-center">
-            <div class="w-[606px] h-[776px] bg-[url('/about_sec_3img.png')] bg-no-repeat bg-[left_-30rem_top_0] bg-cover bg- z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl"></div>
+        <div class="flex justify-start items-center">
+            <div
+                class="w-[606px] h-[776px] bg-[url('/about_sec_3img.png')] bg-no-repeat bg-[left_-30rem_top_0] bg-cover bg- z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
+            </div>
         </div>
 
         <!-- right -->
@@ -191,7 +218,7 @@
 <!-- section-6 -->
 <section class="mt-[10rem] w-full h-auto flex justify-center items-center">
 
-    <div class="w-[85%] h-auto flex flex-col justify-between">
+    <div class="w-[85%] min-w-[85%] h-auto flex flex-col justify-between">
 
         <!-- sec-1 -->
         <div class="w-full h-auto text-center">
@@ -291,26 +318,27 @@
 
 </section>
 
-<!-- section-7 -->
-<section class="relative mt-[4rem] w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
+<!-- section-7-->
+<section
+    class="mt-[5rem] relative w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
 
-    <!-- overlay -->
+
     <div class="absolute inset-0 bg-white/80"></div>
 
-    <div class="absolute w-[85%] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
+    <div class="absolute max-w-[85%] lg:min-w-[85%] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
 
-        <!-- left -->
-        <div class="flex justify-end">
+
+        <div class="flex justify-start">
             <img src="/section_7_img2.png" alt="">
         </div>
 
-        <!-- rigth -->
+
         <div class="p-[1rem] pt-[4rem]">
             <h1 class="text-[48px] text-[white] font-[600] capitalize">you can consult here</h1>
             <p class="capitalize font-[400] text-[white]">Morbi tellus et commodo mauris tellus ac. Sollicitudin
                 elementum facilisi ut a ut ullamcorper ut.</p>
 
-            <!-- input -->
+
             <div class="mt-[3rem] w-[455px] h-[74px] bg-[white] rounded-[10px] flex items-center justify-between px-3">
 
                 <input type="text" placeholder="Enter your email address"
