@@ -1,19 +1,20 @@
 <!-- hero-section -->
-<section class="mt-[106px] w-full max-h-[612px] bg-[#cccccc] flex justify-center items-center z-[1]">
+<section class="mt-[106px] w-full h-auto lg:max-h-[612px] bg-[#cccccc] flex justify-center items-center z-[1]">
 
-    <div class="w-[73.5rem] min-h-full flex flex-col lg:flex-row justify-center items-center gap-[2rem]">
+    <div
+        class="lg:w-[53rem] xl:w-[73.5rem] min-h-full flex flex-col lg:flex-row justify-center items-center gap-[2rem] px-2 lg:px-0">
 
         <!-- left -->
-        <div class="w-full lg:w-[60%] flex flex-col justify-center text-center lg:text-left">
-            <h1 class="text-[32px] lg:text-[48px] text-[#105156] font-[700] leading-[1.2]">
+        <div class="w-full lg:w-[60%] flex flex-col justify-center text-center lg:text-left pt-5 lg;pt-0">
+            <h1 class="text-[32px] lg:text-[48px] text-[#105156] font-[700] leading-[1.2] px-2 lg:px-0">
                 We deliver leads for real estate agents in Germany
             </h1>
-            <p class="text-[#6D758F] mt-[1rem] text-[15px] lg:text-[16px] pe-[10rem]">
+            <p class="text-[#6D758F] mt-[1rem] text-[15px] lg:text-[16px] px-5 lg:px-0 lg:pe-[10rem]">
                 Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis sit phasellus mollis sit aliquam sit
                 nullam neques.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 mt-[2rem] justify-center lg:justify-start">
+            <div class="flex gap-4 mt-[2rem] justify-center lg:justify-start">
                 <button
                     class="w-[150px] h-[44px] rounded-[7px] border border-transparent bg-[#105156] text-white text-[14px] hover:border-[#105156] hover:bg-transparent hover:text-[#105156] transition-all duration-300 ease-in-out">
                     Get started <i class="ri-arrow-right-line"></i>
@@ -34,7 +35,7 @@
                 <i class="ri-play-fill"></i>
             </div>
 
-            <img src="/about_hero.png" alt="About Hero" class="z-10 w-auto object-cover rounded-lg">
+            <img src="/about_hero.png" alt="About Hero" class="z-10 w-auto object-cover rounded-lg h-[350px] lg:h-auto">
         </div>
 
         <!-- Video Modal -->
@@ -61,25 +62,24 @@
     </div>
 </section>
 
-
 <!-- section-2 -->
 <section class="w-full h-auto flex justify-center items-center mt-[3rem]">
+    <div class="w-[73.5rem]     h-auto grid grid-cols-1 xl:grid-cols-2 gap-14">
 
-    <div class="w-[73.5rem] h-[635.7px] grid grid-cols-2">
-
-        <!-- left -->
-        <div class="w-full h-full">
+        <!-- Text Section -->
+        <div class="w-full h-full order-2 xl:order-1 px-6 text-center lg:text-left">
             <p class="text-[#105156] text-[19.4px]">WHO ARE WE</p>
-            <h1 class="mt-[2rem] font-[600] text-[39.8px] leading-[47px] text-[#2B2B2B] pe-[2rem]">Assisting individuals
-                in locating the
-                appropriate real estate.</h1>
-            <p class="mt-[1.5rem] text-[#808080] leading-[26px] pe-[5rem]">Donec porttitor euismod dignissim. Nullam a
-                lacinia ipsum, nec dignissim purus. Nulla convallis ipsum
-                molestie nibh malesuada, ac malesuada leo volutpat.</p>
+            <h1 class="mt-[2rem] font-[600] text-[32px] lg:text-[39.8px] leading-[47px] text-[#2B2B2B]">
+                Assisting individuals in locating the appropriate real estate.
+            </h1>
+            <p class="mt-[1.5rem] text-[#808080] leading-[26px] lg:pe-[5rem]">
+                Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.
+                Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.
+            </p>
 
-            <div class="w-full h-auto flex flex-col gap-5 mt-[3rem]">
-
-                <div class="w-[400px] h-[131px] shadow-xl rounded-[30px] flex justify-evenly items-center">
+            <div class="w-full h-auto flex flex-col md:flex-row xl:flex-col gap-5 mt-[3rem]">
+                <!-- card 1 -->
+                <div class="w-full sm:w-[400px] h-[131px] shadow-xl rounded-[30px] flex justify-evenly items-center">
                     <div class="w-[20%] h-full flex justify-center items-center">
                         <img src="/about_sec2_icon _smarthome.png" alt="">
                     </div>
@@ -89,8 +89,8 @@
                     </div>
                 </div>
 
-
-                <div class="w-[400px] h-[131px] shadow-xl rounded-[30px] flex justify-evenly items-center">
+                <!-- card 2 -->
+                <div class="w-full sm:w-[400px] h-[131px] shadow-xl rounded-[30px] flex justify-evenly items-center">
                     <div class="w-[20%] h-full flex justify-center items-center">
                         <img src="/about_sec2_icon _user.png" alt="">
                     </div>
@@ -99,23 +99,23 @@
                         <p class="text-[#808080] leading-[26px]">Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <!-- right -->
-        <div class="w-full h-full grid grid-cols-2 items-end lg:justify-between">
+        <!-- Image Section -->
+        <div
+            class="w-full h-full justify-center grid md:grid-cols-2 md:gap-5 xl:gap-0 lg:items-end lg:justify-between order-1 xl:order-2 xl:mt-0">
 
-            <!-- 1 -->
-            <div class="w-full h-full flex lg:justify-start 2xl:justify-end items-end pe-[0rem] 2xl:pe-[2rem]">
+            <div class="w-full h-full flex md:justify-end  items-end pe-[0rem] 2xl:pe-[2rem]">
                 <div
-                    class="w-[280px] h-[500px] rounded-[30px] bg-[url('/about_sec_2img1.png')] bg-cover bg-center shadow-xl">
+                    class="w-[23.5rem] md:w-[280px] h-[180px] md:h-[400px] xl:h-[500px] rounded-[30px] bg-[url('/about_sec_2img1.png')] bg-cover bg-center shadow-xl">
                 </div>
             </div>
-            <!-- 2 -->
-            <div class="h-full w-[277px] grid grid-row-2 gap-2 items-center pt-[3rem] pb-[4rem]">
+
+            <div
+                class="h-full w-full md:w-[277px] grid grid-row-2 gap-4 lg:gap-0 items-center pt-[1rem] lg:pt-[4rem] lg:pb-[5rem]">
                 <div
-                    class="shadow-xl w-full h-[280px] rounded-[30px] bg-[url('/about_sec_2img2.png')] bg-center bg-cover">
+                    class="shadow-xl w-full h-[180px] lg:h-[280px] rounded-[30px] bg-[url('/about_sec_2img2.png')] bg-center bg-cover">
                 </div>
                 <div
                     class="shadow-xl w-full h-[180px] rounded-[30px] bg-[url('/about_sec_2img3.png')] bg-center bg-cover relative">
@@ -126,84 +126,89 @@
     </div>
 </section>
 
-
-
 <!-- section-3 -->
-<section class="mt-[9rem] w-full h-[1000px] flex justify-center items-center">
+<section class="mt-[5rem] w-full flex justify-center items-center">
+   
+    <div class="container w-full md:w-full lg:w-[100rem] h-auto lg:h-[1000px] grid grid-cols-1 lg:grid-cols-2 relative gap-[2rem] lg:gap-3">
 
-
-    <div class="container w-[100rem] h-full grid grid-cols-2 relative">
-
-        <!-- left -->
-        <div class="flex justify-end items-center">
-
-            <div class="w-[85%] capitalize flex flex-col justify-center">
-                <h1 class="text-[57px] font-[600] text-[#343434] leading-[120%] pe-[10rem]">Professional new customer
-                    service</h1>
-                <p class="mt-[2rem] text-[18px] text-[#595959] leading-[174%] pe-[5rem]">From many years of experience,
-                    we
-                    know how time-consuming it can be to acquire a long-term owner. But that's precisely why we want to
-                    take
-                    the pressure off you with our first-class new customer service. This leaves you more time for the
-                    truly
-                    important things: sales and customer service.</p>
-            </div>
-
-        </div>
-
-        <!-- right -->
-        <div class="relative flex justify-end items-center lg:pe-[7rem]">
+        <!-- Right side (Image) → shows first on mobile -->
+        <div
+            class="order-1 lg:order-2 relative flex justify-center lg:justify-end items-center pt-10 lg:pt-0 lg:pe-[7rem]">
             <div
-                class="w-[597px] h-[776px] bg-[url('/about_sec_2img.png')] bg-no-repeat bg-cover bg-center z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
+                class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[597px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[776px] bg-[url('/about_sec_2img.png')] bg-no-repeat bg-cover bg-center rounded-tr-[5rem] lg:rounded-tr-[11rem] rounded-bl-[5rem] lg:rounded-bl-[11rem] shadow-2xl">
             </div>
         </div>
 
-        <img src="/about_sec_3_vectore.png" alt="" class="absolute right-0 top-0 -z-[5]">
+        <!-- Left side (Text) → shows second on mobile -->
+        <div
+            class="order-2 lg:order-1 flex justify-center lg:justify-end items-center lg:items-start pt-[2rem] md:pt-[4rem] lg:pt-[10rem]">
+            <div
+                class="w-[90%] sm:w-[85%] md:w-[75%] lg:w-[85%] capitalize flex flex-col justify-center text-center lg:text-left">
+                <h1
+                    class="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[57px] font-[600] text-[#343434] leading-[120%] lg:pe-[10rem]">
+                    Professional new customer service
+                </h1>
+                <p
+                    class="mt-[1.5rem] sm:mt-[2rem] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-[#595959] leading-[174%] lg:pe-[5rem]">
+                    From many years of experience, we know how time-consuming it can be to acquire a long-term owner.
+                    But that's
+                    precisely why we want to take the pressure off you with our first-class new customer service. This
+                    leaves you
+                    more time for the truly important things: sales and customer service.
+                </p>
+            </div>
+        </div>
 
+        <!-- Decorative Vector -->
+        <img src="/about_sec_3_vectore.png" alt=""
+            class="absolute right-0 top-0 -z-[5] w-[300px] md:w-[600px] xl:w-auto" />
     </div>
-
 </section>
-
 
 <!-- section-4 -->
 <section class="section_4 mt-[3rem] w-full flex justify-center items-center">
 
-    <div class="conatiner w-[100rem] h-full  relative flex justify-center items-center pb-[5rem]">
+    <div
+        class="container w-full lg:w-[100rem] h-auto lg:h-full relative flex flex-col lg:flex-row justify-center items-center lg:items-start pb-[5rem]">
 
-        <!-- vectore -->
-        <img src="/vector_about_sec3.png" alt="" class="absolute left-0 bottom-0 -z-[5]">
+        <!-- Background Vector -->
+        <img src="/vector_about_sec3.png" alt=""
+            class="absolute left-0 top-[8rem] lg:top-[10rem] lg:bottom-0 -z-[5] w-[350px] sm:w-[400px] md:w-[600px] xl:w-auto" />
 
-        <div class="container w-[80rem] flex justify-center items-start">
-
-            <!-- left -->
-            <div class="flex justify-start items-center">
-                <div
-                    class="w-[606px] h-[776px] bg-[url('/about_sec_3img.png')] bg-no-repeat bg-[left_-30rem_top_0] bg-cover bg- z-100 rounded-tr-[11rem] rounded-bl-[11rem] shadow-2xl">
-                </div>
+        <!-- Left Side: Image (shows first on mobile) -->
+        <div
+            class="order-1 lg:order-1 flex justify-center lg:justify-start items-center w-full lg:ps-[8%]">
+            <div
+                class="w-[90%] sm:w-[80%] md:w-[70%] lg:w-[606px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[776px] bg-[url('/about_sec_3img.png')] bg-no-repeat bg-cover bg-[top_0_left_-13rem] lg:bg-[left_-30rem_top_0] rounded-tr-[5rem] lg:rounded-tr-[11rem] rounded-bl-[5rem] lg:rounded-bl-[11rem] shadow-2xl">
             </div>
-
-            <!-- right -->
-            <div class="capitalize ps-[2rem]">
-
-                <h1 class="text-[57px] font-[600] text-[#343434] leading-[120%]">Better than the industry
-                    average: Thanks to our high quality standards</h1>
-                <p class="mt-[1rem] text-[18px] text-[#595959] leading-[174%] pe-[5rem]">We only employ highly qualified
-                    professionals who are not only masters of their craft but also know and understand the ins and outs
-                    of
-                    the real estate industry. Each team member undergoes a selection process in which we assess the
-                    applicant's basic skills as well as their technical know-how. Only with a sufficient level of both
-                    components can we guarantee outstanding results.</p>
-            </div>
-
         </div>
 
+        <!-- Right Side: Text -->
+        <div
+            class="order-2 lg:order-2 capitalize w-full lg:w-auto px-[1rem] sm:px-[2rem] lg:ps-[2rem] flex flex-col justify-center items-center lg:items-start text-center lg:text-left mt-[5rem] md:mt-[8rem] lg:mt-0">
+            <h1
+                class="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[57px] font-[600] text-[#343434] leading-[120%] lg:pe-[5rem]">
+                Better than the industry average: Thanks to our high quality standards
+            </h1>
+            <p
+                class="mt-[1.5rem] sm:mt-[2rem] text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-[#595959] leading-[174%] lg:pe-[5rem]">
+                We only employ highly qualified professionals who are not only masters
+                of their craft but also know and understand the ins and outs of the real
+                estate industry. Each team member undergoes a selection process in which
+                we assess the applicant's basic skills as well as their technical
+                know-how. Only with a sufficient level of both components can we
+                guarantee outstanding results.
+            </p>
+        </div>
     </div>
-
 </section>
 
 <!-- section-5 -->
-<section id="counterSection" class="section_5 mt-[5rem] w-full h-auto flex justify-center items-center">
-    <div class="w-[971px] h-auto flex justify-between items-center">
+<section id="counterSection" class="section_5  lg:mt-[5rem] w-full h-auto flex justify-center items-center">
+
+    <div
+        class="w-[971px] h-auto flex flex-col md:grid md:grid-cols-2 xl:flex xl:flex-row gap-10 justify-between items-center">
+
         <div class="w-auto h-auto flex flex-col justify-center items-center">
             <h1
                 class="text-[34px] font-[600] bg-[url('/ring_3.png')] bg-center bg-no-repeat w-[100%] flex justify-center items-center">
@@ -232,22 +237,23 @@
 </section>
 
 <!-- section-6 -->
-<section class="mt-[10rem] w-full h-auto flex justify-center items-center">
+<section class="mt-[5rem] lg:mt-[10rem] w-full h-auto flex justify-center items-center">
 
     <div class="w-[80rem] h-auto flex flex-col justify-between">
 
-        <!-- sec-1 -->
+
         <div class="w-full h-auto text-center">
             <h1 class="text-[40px] font-[700] text-[#23262F]">Our services at a glance</h1>
-            <p class="text-[18px] text-[#353945] mt-[1rem]">Take the initiative now and regularly win even more new
+            <p class="text-[18px] text-[#353945] mt-[1rem] px-3 lg:px-0">Take the initiative now and regularly win even
+                more new
                 customers!</p>
         </div>
 
-        <!-- sec-2 -->
-        <div class="w-full h-auto flex justify-between items-start mt-[2.5rem]">
+        <div
+            class="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start place-items-center gap-6 lg:gap-10 mt-[2.5rem]">
 
-            <!-- card-1 -->
-            <div class="w-[272px] rounded-[12px] bg-[#EEF9F2] shadow-sm flex flex-col items-center p-[1.5rem]">
+            <div
+                class="w-[90%] lg:w-[272px] rounded-[12px] bg-[#EEF9F2] shadow-sm flex flex-col items-center p-[1.5rem]">
                 <div class="w-[48px] h-[48px] rounded-full bg-[#58C27D] flex justify-center items-center">
                     <img src="/sun.png" alt="">
                 </div>
@@ -266,8 +272,9 @@
                 </div>
             </div>
 
-            <!-- card-2 -->
-            <div class="w-[272px] rounded-[12px] bg-[#FFF4EE] shadow-sm flex flex-col items-center p-[1.5rem]">
+
+            <div
+                class="w-[90%] lg:w-[272px] rounded-[12px] bg-[#FFF4EE] shadow-sm flex flex-col items-center p-[1.5rem]">
                 <div class="w-[48px] h-[48px] rounded-full bg-[#FA8F54] flex justify-center items-center">
                     <img src="/laptop.png" alt="">
                 </div>
@@ -287,8 +294,9 @@
                 </div>
             </div>
 
-            <!-- card-3 -->
-            <div class="w-[272px] rounded-[12px] bg-[#EBF1FF] shadow-sm flex flex-col items-center p-[1.5rem]">
+
+            <div
+                class="w-[90%] lg:w-[272px] rounded-[12px] bg-[#EBF1FF] shadow-sm flex flex-col items-center p-[1.5rem]">
                 <div class="w-[48px] h-[48px] rounded-full bg-[#3B71FE] flex justify-center items-center">
                     <img src="/book.png" alt="">
                 </div>
@@ -307,8 +315,9 @@
                 </div>
             </div>
 
-            <!-- card-4 -->
-            <div class="w-[272px] rounded-[12px] bg-[#26F9BA33] shadow-sm flex flex-col items-center p-[1.5rem]">
+
+            <div
+                class="w-[90%] lg:w-[272px] rounded-[12px] bg-[#26F9BA33] shadow-sm flex flex-col items-center p-[1.5rem]">
 
                 <div class="w-[48px] h-[48px] rounded-full bg-[#26F9BA] flex justify-center items-center">
                     <img src="/book.png" alt="">
@@ -335,11 +344,13 @@
 </section>
 
 <!-- section-7-->
-<section class="mt-[5rem] relative w-full h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
+<section
+    class="mt-[5rem] md:mt-[5rem] lg:mt-[5rem] relative w-full h-[40rem] md:h-[25rem] lg:h-[638px] flex justify-center items-center bg-[url('/section_7.jpg')] bg-cover bg-center">
 
     <div class="absolute inset-0 bg-white/80"></div>
 
-    <div class="absolute w-[80rem] h-[368px] rounded-2xl bg-[#105156] grid grid-cols-2">
+    <div
+        class="absolute w-[90%] h-auto lg:max-w-[80rem] xl:h-[368px] rounded-2xl bg-[#105156] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
 
 
         <div class="flex justify-start">
@@ -347,18 +358,20 @@
         </div>
 
 
-        <div class="p-[1rem] pt-[4rem]">
-            <h1 class="text-[48px] text-[white] font-[600] capitalize">you can consult here</h1>
-            <p class="capitalize font-[400] text-[white]">Morbi tellus et commodo mauris tellus ac. Sollicitudin
+        <div class="p-[1rem] lg:pt-[4rem]">
+            <h1 class="text-[28px] lg:text-[48px] text-[white] font-[600] capitalize">you can consult here</h1>
+            <p class="capitalize font-[400] text-[white] text-[13px] lg:text-[16px]">Morbi tellus et commodo mauris
+                tellus ac. Sollicitudin
                 elementum facilisi ut a ut ullamcorper ut.</p>
 
 
-            <div class="mt-[3rem] w-[455px] h-[74px] bg-[white] rounded-[10px] flex items-center justify-between px-3">
+            <div
+                class="mt-[3rem] h-[65px] xl:w-[455px] lg:h-[74px] bg-[white] rounded-[10px] flex items-center justify-between px-3">
 
                 <input type="text" placeholder="Enter your email address"
                     class="w-[250px] focus:outline-none focus:border-none px-3">
 
-                <button class="w-[123px] h-[56px] rounded-[7px] bg-[#105156] text-[white]">Submit</button>
+                <button class="w-[123px] h-[45px] lg:h-[56px] rounded-[7px] bg-[#105156] text-[white]">Submit</button>
             </div>
         </div>
     </div>
