@@ -37,7 +37,7 @@ export class About implements OnInit, AfterViewInit {
   constructor(private el: ElementRef, private counterService: CounterService, private sanitizer: DomSanitizer) { }
 
   openVideoModal() {
-    const VideoUrl = 'https://www.youtube.com/embed/_yhE9Wo-OtQ?autoplay=1';
+    const VideoUrl = 'https://maklerplan.ch/wp-content/uploads/2021/10/Callinggermany_maklerplan_V2.mp4';
     this.sanitizedVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(VideoUrl);
     this.isVideoModalOpen = true;
   }
