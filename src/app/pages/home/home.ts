@@ -19,7 +19,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 export class Home implements OnInit, AfterViewInit {
   
   activeTab = 0;
-
+  
   showMore1 = false;
   showMore2 = false;  
   showMore3 = false;
